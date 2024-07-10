@@ -51,8 +51,8 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
 ## How to Run the Repository
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/timoconnor21/Skin_lesion_detection.git
-   cd Skin_lesion_detection
+      git clone https://github.com/timoconnor21/Skin_lesion_detection.git
+      cd Skin_lesion_detection
 
 2. **Install Dependencies:**
     ```bash
@@ -66,7 +66,7 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
    - Choose whether or not to apply post-processing
 
 3.  **Run run_me.py:**
-      ```bash
+    ```bash
        run_me.py
    - The run_me.py file will step through the appropriate steps and return the results.
 
