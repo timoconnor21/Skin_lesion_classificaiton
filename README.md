@@ -44,13 +44,16 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
 ## Results and Discussion
 - **Training Curves**
   
-![image](https://github.com/timoconnor21/Skin_lesion_classification/assets/175061865/fa216d05-326c-4ba3-8055-03e013e06f23)
+![Training_curves](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/9bd7bfa9-36b0-4d6c-801f-eec6fb8caf36)
+
+
 - **ROC Curve**
-  
-![image](https://github.com/timoconnor21/Skin_lesion_classification/assets/175061865/32092618-af30-484d-a22a-0a921b62cbdb)
+
+![ROC_curve](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/d555f89d-6dc6-4852-bbd9-fa0c0dc30ee2)
+
 - **Confusion Matrix**
-  
-![image](https://github.com/timoconnor21/Skin_lesion_classification/assets/175061865/835a407d-63ff-4717-a1e7-fcac6797f671)
+
+![Confusion_matrix](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/088b4474-b4b2-47f4-8463-ec02a5b7c088)
 
 - **Model Performance:**
   - Accuracy: 90.8%
@@ -61,11 +64,12 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
  
 **Results after test time augmentaion:**
 - **ROC Curve**
-  
-![image](https://github.com/timoconnor21/Skin_lesion_classification/assets/175061865/befd8310-d37a-4e3b-9a63-5ded552aec81)
+
+![TTA_ROC_curve](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/267ccf8a-c838-4ce3-a5d6-fabdf39a5402)
+
 - **Confusion Matrix**
   
-![image](https://github.com/timoconnor21/Skin_lesion_classification/assets/175061865/0487b3d9-448c-4e13-8e25-7fc719a8f017)
+![TTA_ConfMat](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/8f129487-7452-44e6-8d05-231482706060)
 
 
 - **Model Performance:**
@@ -78,7 +82,7 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
 **Results optimal thresholding:**
 - **Confusion Matrix**
   
-![image](https://github.com/timoconnor21/Skin_lesion_classification/assets/175061865/3557a39d-8b88-449d-8d3e-483a3c031c32)
+![OptimalThresh_ConfMat](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/05b18ecf-5f29-491c-b1cd-dd6219ee827e)
 
 - **Model Performance:**
   - Accuracy: 92.6%
