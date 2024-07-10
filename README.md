@@ -1,4 +1,4 @@
-# Skin Lesion classification
+# Skin Lesion Classification
 Computer Vision Take Home Project
 
 ## Objective
@@ -16,7 +16,7 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
 9. [Contact](#contact)
 
 ## Code Repository
-- **GitHub Repository:** [https://github.com/timoconnor21/Skin_lesion_detection](#)
+- **GitHub Repository:** [https://github.com/timoconnor21/Skin_lesion_classification](#)
 - All code for this project is pushed to the repository.
 
 ## Data Management
@@ -44,13 +44,13 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
 ## Results and Discussion
 - **Training Curves**
   
-![image](https://github.com/timoconnor21/Skin_lesion_detection/assets/175061865/fa216d05-326c-4ba3-8055-03e013e06f23)
+![image](https://github.com/timoconnor21/Skin_lesion_classification/assets/175061865/fa216d05-326c-4ba3-8055-03e013e06f23)
 - **ROC Curve**
   
-![image](https://github.com/timoconnor21/Skin_lesion_detection/assets/175061865/32092618-af30-484d-a22a-0a921b62cbdb)
+![image](https://github.com/timoconnor21/Skin_lesion_classification/assets/175061865/32092618-af30-484d-a22a-0a921b62cbdb)
 - **Confusion Matrix**
   
-![image](https://github.com/timoconnor21/Skin_lesion_detection/assets/175061865/835a407d-63ff-4717-a1e7-fcac6797f671)
+![image](https://github.com/timoconnor21/Skin_lesion_classification/assets/175061865/835a407d-63ff-4717-a1e7-fcac6797f671)
 
 - **Model Performance:**
   - Accuracy: 90.8%
@@ -62,10 +62,10 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
 **Results after test time augmentaion:**
 - **ROC Curve**
   
-![image](https://github.com/timoconnor21/Skin_lesion_detection/assets/175061865/befd8310-d37a-4e3b-9a63-5ded552aec81)
+![image](https://github.com/timoconnor21/Skin_lesion_classification/assets/175061865/befd8310-d37a-4e3b-9a63-5ded552aec81)
 - **Confusion Matrix**
   
-![image](https://github.com/timoconnor21/Skin_lesion_detection/assets/175061865/0487b3d9-448c-4e13-8e25-7fc719a8f017)
+![image](https://github.com/timoconnor21/Skin_lesion_classification/assets/175061865/0487b3d9-448c-4e13-8e25-7fc719a8f017)
 
 
 - **Model Performance:**
@@ -78,7 +78,7 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
 **Results optimal thresholding:**
 - **Confusion Matrix**
   
-![image](https://github.com/timoconnor21/Skin_lesion_detection/assets/175061865/3557a39d-8b88-449d-8d3e-483a3c031c32)
+![image](https://github.com/timoconnor21/Skin_lesion_classification/assets/175061865/3557a39d-8b88-449d-8d3e-483a3c031c32)
 
 - **Model Performance:**
   - Accuracy: 92.6%
@@ -90,15 +90,15 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
 ## How to Run the Repository
 1. **Clone the Repository:**
    ```bash
-       git clone https://github.com/timoconnor21/Skin_lesion_detection.git
-       cd Skin_lesion_detection
+       git clone https://github.com/timoconnor21/Skin_lesion_classification.git
+       cd Skin_lesion_classification
    ```
 
 2. **Install Dependencies:**
 
    Navigate to the repository directory
    ```bash
-       cd .../skin_lesion_detection
+       cd .../skin_lesion_classification
    ```
    Install the required dependencies
    ```bash
