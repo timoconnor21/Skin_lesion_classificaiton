@@ -1,4 +1,4 @@
-# Skin Lesion Detection
+# Skin Lesion classification
 Computer Vision Take Home Project
 
 ## Objective
