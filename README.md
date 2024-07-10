@@ -109,10 +109,15 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
        conda env create -f environment.yml
    ```
 
-3.  **Update config.py:**
-     - In the config.py file, select whether to train a new model or load current best
+3.  **Update configuration.py:**
+     - In the configuration.py file, select whether to train a new model or load current best
      - If training a new model, be sure to set the desired training parameters
      - Choose whether or not to apply post-processing
+     - Update the main_dir to the repo folder and run the config.py to update the working directory
+  
+    ```bash
+        model_configuration.py
+    ```
 
 3.  **Run run_me.py:**
     ```bash
