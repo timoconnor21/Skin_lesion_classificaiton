@@ -129,7 +129,19 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
      - The run_me.py file will step through the appropriate steps and return the results.
 
 ## Dependencies
-- All dependencies are listed in requirements.txt
+
+  - pandas==1.2.4
+  - numpy==1.22.3 
+  - openpyxl==3.0.10
+  - scikit-learn==1.0.2
+  - scipy==1.7.3
+  - scikit-image==0.16.2
+  - opencv==4.6.0
+  - matplotlib==3.4.3
+  - pip==22.2.2
+  - albumentations=1.3.0=pyhd8ed1ab_0
+  - opencv-python-headless==4.10.0.84
+  - torch==1.12.0
 
 ## Contact
 For any questions or clarifications, feel free to contact me at timroconnor21@gmail.com.
