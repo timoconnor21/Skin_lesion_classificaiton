@@ -51,14 +51,32 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
 ## How to Run the Repository
 1. **Clone the Repository:**
    ```bash
-      git clone https://github.com/timoconnor21/Skin_lesion_detection.git
-      cd Skin_lesion_detection
+       git clone https://github.com/timoconnor21/Skin_lesion_detection.git
+       cd Skin_lesion_detection
+   ```
 
 2. **Install Dependencies:**
-    ```bash
-      python3 -m venv skin_lesion_detection_env
-      source skin_lesion_detection_env/bin/activate  # On Windows use `skin_lesion_detection_env\Scripts\activate
-      pip install -r requirements.txt
+
+   Create a new virtual enviornment
+   ```bash
+      conda create --name skin_lesion_detection_env python=3.8
+   ```
+   
+   Activate the new enviornment
+   ```bash
+      conda activate skin_lesion_detection_env
+   ```
+
+   Navigate to the repository directory
+   ```bash
+       cd .../skin_lesion_detection
+   ```
+   Install the required dependencies
+   ```bash
+       pip install -r requirements.txt
+   ```
+   
+   
 
 3.  **Update config.py:**
    - In the config.py file, select whether to train a new model or load current best
@@ -67,7 +85,8 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
 
 3.  **Run run_me.py:**
     ```bash
-       run_me.py
+        run_me.py
+    ```
    - The run_me.py file will step through the appropriate steps and return the results.
 
 ## Dependencies
