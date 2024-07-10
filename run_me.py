@@ -139,9 +139,9 @@ def skin_lesion_detection(config):
         data_transforms = {
             'train': A.Compose([
                 A.RandomRotate90(p=1),   
-                A.ShiftScaleRotate(shift_limit=0.15, scale_limit = .1, rotate_limit=45, p=1),
-                AddGaussNoise(mean_val=0, var_val=.001),
-                A.PixelDropout (dropout_prob=0.1, per_channel=True, drop_value=0, mask_drop_value=None, always_apply=False, p=1),
+                # A.ShiftScaleRotate(shift_limit=0.05, scale_limit = .05, rotate_limit=45, p=.2),
+                AddGaussNoise(mean_val=0, var_val=.0001, p=.1),
+                # A.PixelDropout (dropout_prob=0.1, per_channel=True, drop_value=0, mask_drop_value=None, always_apply=False, p=1),
                 A.Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)),
                 A.pytorch.ToTensorV2()
             ]),

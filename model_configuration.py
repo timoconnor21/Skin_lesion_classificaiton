@@ -38,7 +38,7 @@ def get_config():
         'use_simple_CNN': False,
         'seed': 42,
         'model_name': None,
-        'max_epochs': 50,
+        'max_epochs': 200,
         'initial_lr': .001,
         'batch_size': 64,
         'early_stop_patience': 10,

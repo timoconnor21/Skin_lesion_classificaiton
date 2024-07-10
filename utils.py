@@ -101,7 +101,7 @@ def get_simple_CNN(num_classes=2):
 
 # Custom dataset class for handling TTA (test-time augmentation)
 class TTADataset(Dataset):
-    def __init__(self, image_paths, labels, transform=None, num_augmentations=5):
+    def __init__(self, image_paths, labels, transform=None, num_augmentations=10):
         self.image_paths = image_paths
         self.labels = labels
         self.transform = transform
