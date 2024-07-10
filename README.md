@@ -61,13 +61,14 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
       pip install -r requirements.txt
 
 3.  **Update config.py:**
-   - Om the config.py file, select whether to train a new model or load current best
+   - In the config.py file, select whether to train a new model or load current best
    - If training a new model, be sure to set the desired training parameters
    - Choose whether or not to apply post-processing
 
 3.  **Run run_me.py:**
+      ```bash
+       run_me.py
    - The run_me.py file will step through the appropriate steps and return the results.
-
 
 ## Dependencies
 - All dependencies are listed in requirements.txt
