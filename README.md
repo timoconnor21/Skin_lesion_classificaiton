@@ -96,26 +96,14 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
 
 2. **Install Dependencies:**
 
-   Create a new virtual enviornment
-   ```bash
-      conda create --name skin_lesion_detection_env python=3.8
-   ```
-   
-   Activate the new enviornment
-   ```bash
-      conda activate skin_lesion_detection_env
-   ```
-
    Navigate to the repository directory
    ```bash
        cd .../skin_lesion_detection
    ```
    Install the required dependencies
    ```bash
-       pip install -r requirements.txt
+       conda env create -f environment.yml
    ```
-   
-   
 
 3.  **Update config.py:**
      - In the config.py file, select whether to train a new model or load current best
