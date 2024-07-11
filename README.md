@@ -46,7 +46,7 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
   
 ![image](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/b8352c81-a26a-4552-915f-81d415d85e04)
 
-  - Early stopped after 31 Epochs.
+  - Early stopped after 71 Epochs.
 
 - **Example classified images**
   
