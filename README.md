@@ -108,6 +108,7 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
    ```bash
        conda env create -f environment.yml
    ```
+   Alternatively, a requirements.txt file is also provided with complete package listing. Necessary packages are listed below in the dependencies section.
 
 3.  **Update configuration.py:**
      - In the configuration.py file, select whether to train a new model or load current best
