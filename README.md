@@ -44,52 +44,60 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
 ## Results and Discussion
 - **Training Curves**
   
-![Training_curves](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/9bd7bfa9-36b0-4d6c-801f-eec6fb8caf36)
+![image](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/b8352c81-a26a-4552-915f-81d415d85e04)
+
+  - Early stopped after 31 Epochs.
+
+- **Example classified images**
+  
+   ![image](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/561fa903-8294-4860-ae3a-a47607e1f812)
+   ![image](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/4b50d7a5-d2a4-40f8-bf99-1229c82bc3a4)
+   ![image](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/6b2b7751-e8a8-4633-a21f-2b8dd1b76d5e)
+   ![image](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/1c20660b-c355-48f0-992b-ef9855fb42e1)
 
 
 - **ROC Curve**
 
-![ROC_curve](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/d555f89d-6dc6-4852-bbd9-fa0c0dc30ee2)
+![image](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/4d07d82e-e1f1-419f-9862-dcc2af2eeef0)
 
 - **Confusion Matrix**
 
-![Confusion_matrix](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/088b4474-b4b2-47f4-8463-ec02a5b7c088)
+![image](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/4c06c4a3-d67e-488c-8f93-f45ffb66aa1c)
 
 - **Model Performance:**
-  - Accuracy: 90.8%
-  - Sensitivity: 91.0%
-  - Specificity: 90.6%
-  - MCC: 0.816
-  - AUC: 0.967
+  - Accuracy: 91.5%
+  - Sensitivity: 94.6%
+  - Specificity: 89.3%
+  - MCC: 0.832
+  - AUC: 0.970
  
 **Results after test time augmentaion:**
 - **ROC Curve**
 
-![TTA_ROC_curve](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/267ccf8a-c838-4ce3-a5d6-fabdf39a5402)
+![image](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/cd2ee54f-d72e-4c7a-88f6-1710863cc21a)
 
 - **Confusion Matrix**
   
-![TTA_ConfMat](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/8f129487-7452-44e6-8d05-231482706060)
-
+![image](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/953612f4-d18a-470c-bb80-edd004a6479a)
 
 - **Model Performance:**
-  - Accuracy: 92.6%
-  - Sensitivity: 93.4%
-  - Specificity: 90.6%
-  - MCC: 0.852
-  - AUC: 0.975
+  - Accuracy: 93.4%
+  - Sensitivity: 94.6%
+  - Specificity: 89.3%
+  - MCC: 0.867
+  - AUC: 0.979
  
 **Results optimal thresholding:**
 - **Confusion Matrix**
   
-![OptimalThresh_ConfMat](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/05b18ecf-5f29-491c-b1cd-dd6219ee827e)
+![image](https://github.com/timoconnor21/Skin_lesion_classificaiton/assets/175061865/6659e66f-8ece-480d-bd77-8e4b2a758de6)
 
 - **Model Performance:**
-  - Accuracy: 92.6%
-  - Sensitivity: 93.4%
-  - Specificity: 90.6%
-  - MCC: 0.852
-  - AUC: 0.975
+  - Accuracy: 93.4%
+  - Sensitivity: 94.6%
+  - Specificity: 89.3%
+  - MCC: 0.868
+  - AUC: 0.979
 
 ## How to Run the Repository
 1. **Clone the Repository:**
@@ -100,19 +108,21 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
 
 2. **Install Dependencies:**
 
-   Navigate to the repository directory
+   Update the path to requiremnets.txt annd run the following code
    ```bash
-       cd .../skin_lesion_classification
+       conda create --name skin_class_env --file <.../skin_lesion_classification/requirements.txt>
    ```
-   Install the required dependencies
-   ```bash
-       conda env create -f environment.yml
-   ```
+   Alternatively, all necessary packages are listed below in the dependencies section.
 
-3.  **Update config.py:**
-     - In the config.py file, select whether to train a new model or load current best
+3.  **Update configuration.py:**
+     - In the configuration.py file, select whether to train a new model or load current best
      - If training a new model, be sure to set the desired training parameters
      - Choose whether or not to apply post-processing
+     - Update the main_dir to the repo folder and run the config.py to update the working directory
+  
+    ```bash
+        model_configuration.py
+    ```
 
 3.  **Run run_me.py:**
     ```bash
