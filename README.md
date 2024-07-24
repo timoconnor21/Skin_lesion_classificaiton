@@ -108,7 +108,7 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
 
 2. **Install Dependencies:**
 
-   Update the path to requiremnets.txt annd run the following code
+   Update the path to environment.yml annd run the following code
    ```bash
        conda env create -f <.../skin_lesion_classification/environment.yml>
    ```
