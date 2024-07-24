@@ -110,7 +110,7 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
 
    Update the path to requiremnets.txt annd run the following code
    ```bash
-       conda create --name skin_class_env --file <.../skin_lesion_classification/requirements.txt>
+       conda env create -f <.../skin_lesion_classification/environment.yml>
    ```
    Alternatively, all necessary packages are listed below in the dependencies section.
 
@@ -132,18 +132,33 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
 
 ## Dependencies
 
-  - pandas==1.2.4
-  - numpy==1.22.3 
-  - openpyxl==3.0.10
-  - scikit-learn==1.0.2
-  - scipy==1.7.3
-  - scikit-image==0.16.2
-  - opencv==4.6.0
-  - matplotlib==3.4.3
-  - pip==22.2.2
-  - albumentations=1.3.0=pyhd8ed1ab_0
-  - opencv-python-headless==4.10.0.84
-  - torch==1.12.0
+  channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - conda=24.5.0
+  - matplotlib
+  - numpy=1.26.4
+  - openpyxl
+  - pandas
+  - pip=24.0
+  - python=3.11.9
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=11.8
+  - scikit-image
+  - scikit-learn
+  - scipy
+  - spyder
+  - pip:
+    - albumentations==1.4.11
+    - annotated-types==0.7.0
+    - eval-type-backport==0.2.0
+    - opencv-python==4.10.0.84
+    - opencv-python-headless==4.10.0.84
 
 ## Contact
 For any questions or clarifications, feel free to contact me at timroconnor21@gmail.com.
