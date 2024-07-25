@@ -138,7 +138,6 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
   - conda-forge
   - defaults
 dependencies:
-  - conda=24.5.0
   - matplotlib
   - numpy=1.26.4
   - openpyxl
