@@ -132,11 +132,12 @@ Evaluate the given dataset to classify skin cancer images as benign or malignant
 
 ## Dependencies
 
-  channels:
+channels:
   - pytorch
   - nvidia
   - conda-forge
   - defaults
+    
 dependencies:
   - matplotlib
   - numpy=1.26.4
