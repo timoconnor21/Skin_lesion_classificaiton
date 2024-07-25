@@ -42,6 +42,7 @@ def skin_lesion_detection(config):
     extract_data() # unzip the data to raw_data folder
     save_dir = os.path.join(os.getcwd(),'model_results')
     
+    
     if config['train_model']:
         print('Trianing model')
         results = train_lesion_detector(config)
@@ -117,15 +118,16 @@ def skin_lesion_detection(config):
             
             
         # # Visualize some results
-        # FP_ids = [s.split('\\')[-1] for s in results['FPs']]
-        # FN_ids = [s.split('\\')[-1] for s in results['FNs']]
-        # TN_ids = [sample_id for sample_id in  os.listdir(os.path.join(data_dir,'test','Benign')) if sample_id not in FP_ids]
-        # TP_ids = [sample_id for sample_id in  os.listdir(os.path.join(data_dir,'test','Malignant')) if sample_id not in FN_ids]
+        data_dir = config['data_dir']
+        FP_ids = [s.split('\\')[-1] for s in results['FPs']]
+        FN_ids = [s.split('\\')[-1] for s in results['FNs']]
+        TN_ids = [sample_id for sample_id in  os.listdir(os.path.join(data_dir,'test','Benign')) if sample_id not in FP_ids]
+        TP_ids = [sample_id for sample_id in  os.listdir(os.path.join(data_dir,'test','Malignant')) if sample_id not in FN_ids]
         
-        # show_example_images(TP_ids, data_dir, 'Malignant', 10, 'True Positive Examples')
-        # show_example_images(TN_ids, data_dir, 'Benign', 10, 'True Negative Examples')
-        # show_example_images(FP_ids, data_dir, 'Benign', 10, 'False Positive Examples')
-        # show_example_images(FN_ids, data_dir, 'Malignant', 10, 'False Negative Examples')
+        show_example_images(TP_ids, data_dir, 'Malignant', 10, 'True Positive Examples')
+        show_example_images(TN_ids, data_dir, 'Benign', 10, 'True Negative Examples')
+        show_example_images(FP_ids, data_dir, 'Benign', 10, 'False Positive Examples')
+        show_example_images(FN_ids, data_dir, 'Malignant', 10, 'False Negative Examples')
     
     
     ## Apply post-processing techniques
@@ -133,7 +135,7 @@ def skin_lesion_detection(config):
         device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
         
         print('Applying post processing')
-        model =  torch.load(os.path.join(save_dir,model_name+'.pth'))
+        model =  torch.load(os.path.join(save_dir,model_name+'.pth'),weights_only=False)
 
         
         data_transforms = {

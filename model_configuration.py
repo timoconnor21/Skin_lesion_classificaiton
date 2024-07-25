@@ -29,7 +29,7 @@ Configuration file for setting up the model for training.
 """
 
 def get_config():
-    main_dir = r'C:\Users\TimOConnor\Repos\Tristar\Tristar_take_home'
+    main_dir = r'C:\Users\TimOC\Desktop\CodingAssesments\Skin_lesion_detection'
     os.chdir(main_dir)
     
     config = {
@@ -45,6 +45,7 @@ def get_config():
         'train_frac': 1,
         'val_frac': .2,
         'classes': ["Benign", "Malignant"],
+        'data_dir': os.path.join(os.getcwd(),'raw_data')
         
         }
     
