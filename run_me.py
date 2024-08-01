@@ -247,5 +247,7 @@ def skin_lesion_detection(config):
     return results, post_processing_results
     
 if __name__ == '__main__':
+    print('Starting code execution')
     config = get_config()
     results = skin_lesion_detection(config)
+    print('Code execution completed')

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  skinlesionclassificaiton:
+    image: skinlesionclassificaiton
+    build:
+      context: .
+      dockerfile: ./Dockerfile

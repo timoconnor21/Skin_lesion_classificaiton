@@ -29,8 +29,14 @@ Configuration file for setting up the model for training.
 """
 
 def get_config():
-    main_dir = r'C:\Users\TimOC\Desktop\CodingAssesments\Skin_lesion_detection'
-    os.chdir(main_dir)
+    print('Curr WorkDir:',os.getcwd())
+    if not os.getcwd() == '/workspaces/Skin_lesion_classificaiton':
+        if os.getcwd() == '/home/appuser':
+            main_dir = r'//workspaces/Skin_lesion_classificaiton'
+        else:
+            main_dir = r'C:\Users\TimOC\Desktop\CodingAssesments\Skin_lesion_detection'
+        os.chdir(main_dir)
+    print('updated WorkDir:',os.getcwd())
     
     config = {
         'train_model': False,
